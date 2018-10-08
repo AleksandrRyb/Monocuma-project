@@ -37,6 +37,6 @@ app.post('/imageUrl', (req, res) => { image.handlerImageUrl(req, res)})
 
 
 
-app.listen(process.env.PORT || 3001, () => {
+app.listen(process.env.PORT || 1337, () => {
   console.log("Server has started!!");
 })
