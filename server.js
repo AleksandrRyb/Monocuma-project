@@ -12,10 +12,8 @@ const image = require('./controlers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host: 'postgresql-colorful-86192',
-    user: 'Alex_fish',
-    password: '',
-    database: 'Monocuma game'
+    connectionString: process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
