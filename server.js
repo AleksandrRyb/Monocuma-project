@@ -12,9 +12,9 @@ const image = require('./controlers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    host: 'postgresql-colorful-86192',
     user: 'Alex_fish',
-    password: 'Monocuma',
+    password: '',
     database: 'Monocuma game'
   }
 });
@@ -37,6 +37,6 @@ app.post('/imageUrl', (req, res) => { image.handlerImageUrl(req, res)})
 
 
 
-app.listen(process.env.PORT || 1337, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("Server has started!!");
 })
